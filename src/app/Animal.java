@@ -43,4 +43,18 @@ public class Animal {
     public void setLocatie(Locatie locatie) {
         this.locatie = locatie;
     }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "nume='" + nume + '\'' +
+                ", scientificName='" + scientificName + '\'' +
+                ", tip=" + tip +
+                ", locatie=" + locatie +
+                '}';
+    }
+
+    public String toFileFormat() {
+        return nume + "%" + scientificName + "%" + tip + "%" + locatie;
+    }
 }

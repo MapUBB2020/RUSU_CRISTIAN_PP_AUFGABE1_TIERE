@@ -10,7 +10,7 @@ import java.util.Comparator;
 import java.util.Scanner;
 
 public class Repository {
-    private ArrayList <Animal> storage = new ArrayList<>();
+    private final ArrayList <Animal> storage = new ArrayList<>();
     public Repository() {
 
     }
@@ -42,5 +42,28 @@ public class Repository {
         myWriter.close();
     }
 
+    public void generateFilterFile(String fileName) throws IOException {
+        FileWriter myWriter = new FileWriter(fileName);
+        for(var e : storage) {
+            if (e.getTip() == TipAnimal.carnivore)
+                myWriter.write(e.toFileFormat() + "\n");
+        }
+        int Max = -1;
+        Locatie maxL = null;
+        for (var e : Locatie.values()) {
+            int Count = 0;
+            for (var a : storage) {
+                if (a.getLocatie() == e)
+                    Count += 1;
+            }
+            if (Count > Max)
+            {
+                Max = Count;
+                maxL = e;
+            }
+        }
+        myWriter.write("Locatia cea mai des intalnita este: " + maxL);
+        myWriter.close();
+    }
 
 }

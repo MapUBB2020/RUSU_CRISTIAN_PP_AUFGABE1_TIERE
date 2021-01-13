@@ -9,5 +9,6 @@ public class Main {
 	    Repository r = new Repository();
 	    r.readFile("tiere.txt");
 	    r.generateSortFile("animals-sort-name.txt");
+		r.generateFilterFile("animals-filter-carnivore.txt");
     }
 }

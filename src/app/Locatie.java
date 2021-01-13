@@ -17,4 +17,17 @@ public enum Locatie {
     public String getDisplay() {
         return display;
     }
+
+    public static Locatie getEnum(String s) {
+        for (var v : values()) {
+            if (v.display.equals(s))
+                return v;
+        }
+        return null;
+    }
+
+    @Override
+    public String toString() {
+        return display;
+    }
 }
