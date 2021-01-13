@@ -1,0 +1,8 @@
+Bear%Ursidae%omnivore%asia
+Cat%Felidae%carnivore%europe
+Cheetah%Acinonyx jubatus%carnivore%asia
+Deer%Artiodactile%herbivore%north america
+Mountain Lion%Felis Concolor%carnivore%north america
+Rabbit%Cordate%herbivore%europe
+Red Panda%Ailurus fulgens%omnivore%asia
+﻿Giraffe%Giraffa camelopardalis%herbivore%africa

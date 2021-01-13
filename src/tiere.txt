@@ -1,0 +1,8 @@
+﻿Giraffe#Giraffa camelopardalis#herbivore#africa
+Cheetah#Acinonyx jubatus#carnivore#asia
+Mountain Lion#Felis Concolor#carnivore#north america
+Red Panda#Ailurus fulgens#omnivore#asia
+Cat#Felidae#carnivore#europe
+Rabbit#Cordate#herbivore#europe
+Deer#Artiodactile#herbivore#north america
+Bear#Ursidae#omnivore#asia
